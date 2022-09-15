@@ -5,6 +5,8 @@ Please note that memory dumps must be taken during encryption, otherwise the enc
 
 This script is part of my dissertation which successfully extracted Salsa20 keys from memory dumps and decrypted files compromised by the Sodinokibi ransomware. The process is detailed in the PDF document of my dissertation also available in this repository.
 
-The script will read binary memory files, after it will prompt the user of a folder with the encrypted files in it and will decrypt them restoring them to the original version.
+The script will read binary memory files, after, it will prompt the user for the path of a folder with the encrypted files in it and will decrypt them restoring them to the original version.
 
-This was developed after thorough research which found that Sodinokibi appends 64 bytes of data before encryption changing the position of the cipher that the original file would have. For successful decryption 64 bytes of data has to be appended to the header of the file so the stream aligns correctly.
+Additional Information:
+
+This was developed after thorough research which found that Sodinokibi appends 64 bytes of data before encryption changing the position of the cipher that the original file would have.
